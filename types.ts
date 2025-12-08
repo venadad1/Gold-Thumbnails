@@ -1,3 +1,4 @@
+
 export enum ThumbnailStyle {
   DRAWING = 'Drawing / Sketch',
   OIL_PAINTING = 'Oil Painting',
@@ -26,4 +27,19 @@ export interface GenerationConfig {
   style: ThumbnailStyle;
   quality: ThumbnailQuality;
   characterImage?: string; // Base64
+}
+
+export type TextPosition = 
+  | 'top-left' | 'top-center' | 'top-right' 
+  | 'middle-left' | 'center' | 'middle-right' 
+  | 'bottom-left' | 'bottom-center' | 'bottom-right';
+
+export interface TextOverlayConfig {
+  text: string;
+  fontFamily: string;
+  fontSize: number;
+  color: string;
+  position: TextPosition;
+  isBold: boolean;
+  isItalic: boolean;
 }

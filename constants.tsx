@@ -1,4 +1,4 @@
-import { ThumbnailStyle, StyleOption } from './types';
+import { ThumbnailStyle, StyleOption, TextPosition } from './types';
 import { 
   Pencil, 
   Palette, 
@@ -75,3 +75,51 @@ export const getIconComponent = (name: string) => {
     default: return <Camera className="w-6 h-6" />;
   }
 };
+
+export const POPULAR_FONTS = [
+  "Roboto",
+  "Open Sans",
+  "Montserrat",
+  "Lato",
+  "Poppins",
+  "Oswald",
+  "Bebas Neue",
+  "Anton",
+  "League Spartan",
+  "Raleway",
+  "Merriweather",
+  "Nunito",
+  "Playfair Display",
+  "Rubik",
+  "Bangers",
+  "Heebo",
+  "Righteous",
+  "Lobster",
+  "Barlow",
+  "Fira Sans"
+];
+
+export const TEXT_COLORS = [
+  { name: 'White', value: '#FFFFFF' },
+  { name: 'Black', value: '#000000' },
+  { name: 'Yellow', value: '#FACC15' },
+  { name: 'Red', value: '#EF4444' },
+  { name: 'Green', value: '#22C55E' },
+  { name: 'Blue', value: '#3B82F6' },
+  { name: 'Purple', value: '#A855F7' },
+  { name: 'Cyan', value: '#06B6D4' },
+  { name: 'Orange', value: '#F97316' },
+  { name: 'Pink', value: '#EC4899' },
+];
+
+export const POSITION_GRID: { id: TextPosition, label: string }[] = [
+  { id: 'top-left', label: 'TL' },
+  { id: 'top-center', label: 'TC' },
+  { id: 'top-right', label: 'TR' },
+  { id: 'middle-left', label: 'ML' },
+  { id: 'center', label: 'C' },
+  { id: 'middle-right', label: 'MR' },
+  { id: 'bottom-left', label: 'BL' },
+  { id: 'bottom-center', label: 'BC' },
+  { id: 'bottom-right', label: 'BR' },
+];
